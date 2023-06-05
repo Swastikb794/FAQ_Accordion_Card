@@ -134,3 +134,44 @@ img{
     color: white;
     transition: all .3s ease-in;
   }
+
+  @media (max-width: 700px) {
+    .wrapper {
+      width: 350px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 1fr;
+      grid-gap: 0.5rem;
+      position: relative;
+      padding: 1rem;
+      height: 530px;
+    }
+    .image__wrapper{
+      background: url("./images/bg-pattern-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center 590%;
+    }
+  
+    .image__wrapper--inner {
+      position: absolute;
+      width: 20rem;
+      height: 25rem;
+      background-size: 200%;
+      background-position: center;
+      top: -150%;
+      left: 15%;    
+    }
+    .box {
+      width: 55px;
+      left: 19%;
+      top: -30%;
+    }
+    .accordion__wrapper {
+      margin-top: 0px;
+    }
+    .question-answer__accordion {
+      width: 100%;
+    }
+    .title__accordion {
+      text-align: center;
+    }
+  }
